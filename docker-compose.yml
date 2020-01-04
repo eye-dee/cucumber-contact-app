@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: contacts_app
+      MYSQL_USER: glider
+      MYSQL_PASSWORD: glider
+      MYSQL_ROOT_PASSWORD: glider
+    ports:
+    - 3306:3306
